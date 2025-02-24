@@ -1,0 +1,119 @@
+# NFTをランダムMintする　xrp.cafe
+
+<a id="03_03_01"></a>
+
+xrp.cafeではランダムミントコレクションをリリースすることができます。  
+公式サイトに英語のOWTO動画が掲載されています。  
+
+- [xrp.cafe How to launch an NFT collection
+](https://xrp.cafe/info/how-to-launch-an-nft-collection)
+
+HOWTO動画には最後の設定について触れられていないため、補足情報をこのページにまとめています。  
+
+
+## 基本編
+
+### 価格と販売条件の設定
+
+- **Price**: NFTの販売価格を設定します。
+- **Royalties**: NFT販売後のロイヤリティを設定します。
+- **Limit per wallet**: 1ウォレットあたりの購入上限枚数を設定します。
+- **Flags**: デフォルト設定が推奨されるため、そのまま使用して問題ありません。
+
+### 販売スケジュール
+
+- **Schedule**: 発売開始および終了の時間を設定します（日本時間に対応）。
+
+### 手数料
+
+- **Fees**: NFT総数 × 0.03 XRP + セットアップ費用 3 XRP が必要です。
+※Feesの支払い後、Launch statusがActiveになるまで少し時間が掛かる場合があります
+
+### ダッシュボード設定
+
+- **Dashboard**: 上記設定完了後、Mint Status をONにすると、コレクションページにカウントダウンが表示されます。
+
+
+## Allowlist編
+
+### Allowlist販売の基本設定
+基本編と同様に、以下の項目を設定します。
+
+- **Allowlist販売価格**
+- **ロイヤリティ**
+- **販売スケジュール**
+
+※ **Limit per wallet** は0に設定してください。
+
+### Allowlistの追加設定
+
+- **Address**: Allowlistに追加したいウォレットアドレスを入力します。
+- **Mint limit**: 追加したウォレットアドレスに対するミント上限を設定します。
+- **Add to list**: ウォレットアドレスをAllowlistに追加します。
+
+### ダッシュボード設定
+
+設定後、**Allowlist** と **Mint Status** をONにすると、コレクションページにカウントダウンが表示されます。
+
+### Free Mintの設定
+
+Allowlistを**Free Mint**にしたい場合：  
+
+1. 価格を **0 XRP** に設定します。  
+2. **Mint Status**、**Allowlist**、**Free Mint** をONにします。  
+
+#### 注意点
+価格を0 XRPにすると「"Amount per NFT needs to be set"」というエラーが表示されることがあります。その場合は、以下の手順を試してください：  
+
+1. 価格を一度 **1 XRP** に設定し、**Mint Status**、**Allowlist**、**Free Mint** をONにします。
+2. その後、価格を **0 XRP** に変更します。
+
+### パブリックセールへの移行
+Allowlistのミント期間終了後は、次のように進めます。  
+
+**Mint Status**、**Allowlist**、**Free Mint** をOFFにし、パブリックセールへ移行します。
+
+
+## 応用編
+
+### 運営分の確保
+運営用のNFTを確保するためには：
+
+1. 自分のウォレットアドレスだけをAllowlistに追加します。  
+2. **Free Mint** でミントします。
+
+### 発売中のAllowlist追加
+
+販売中でも、Allowlistの追加が可能です。
+
+
+### AllowlistにCSVファイルをアップロード
+
+AllowlistにCSVファイルをアップロードする方法もあります。
+
+#### Owner NoteでのAllowList作成方法（オススメ）
+
+**Owner Note**を使うと、複数コレクションのオーナー情報や、保有数の条件設定をもとにxrp.cafe対応のAllowListを簡単に作成することができます。  
+Owner Noteのマニュアルページの手順を参考にしてください。
+https://shirome.gitbook.io/owner-note/getting-started/arrisuto
+
+- [Owner Note](https://owner-note.shirome.net/ja)
+- [Owner Note マニュアル アローリスト作成](https://shirome.gitbook.io/owner-note/getting-started/arrisuto)
+
+Owner NoteはXRPL開発者の[しろめさん](https://x.com/shirome_x)が開発されたツールです。  
+NFTオーナーのウォレットアドレスを名前と紐付けて管理したり、XRPLコレクション運営に便利な機能が備わっています。
+
+#### xrp.cafeで特定のNFTコレクションホルダーをAllowlistに追加する方法
+
+1. xrpcafeの該当NFTコレクションページにアクセスします。
+2. View collection insights をクリックします。
+3. 表示されるホルダー一覧から、Download CSV を選択してCSVファイルをダウンロードします。
+4. ダウンロードしたCSVはそのままでは使用できないため、Excelで編集します。
+5. 編集方法がわからない場合は、CATTTのAllowlist を参考にしてください。
+
+- <a href="/manual_doc/CATTT_AL.csv">CATTTのAllowlist</a>
+
+<aside>
+## この記事について
+この記事は、[PlanetX](https://x.com/PlanetXRPL)コレクションを運営されているXRPLクリエイターの[ばいもりさん](https://x.com/baimoripotato)が寄稿してくださいました。  
+</aside>

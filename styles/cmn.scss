@@ -34,13 +34,81 @@ article {
 }
 
 /* ---------------------------------------
-  custom
+  custom 2025026
 --------------------------------------- */
 
-.nx-text-3xl {
-  font-size: 1.6rem;
+article h1.nx-text-4xl {
+  margin-bottom: -0.5rem;
+  font-size: 1.8rem;
 }
 
-.nx-text-2xl {
+article h2.nx-text-3xl {
+  font-size: 1.6rem;
+  font-size: 1.4rem;
+  background: #e5e7eb;
+  margin-top: 3rem;
+  padding: 0.4rem 1rem;
+  border: none;
+  border-radius: 0.3rem;
+}
+
+article h3.nx-text-2xl {
   font-size: 1.2rem;
+}
+
+article h4.nx-text-xl {
+  font-size: 1.2rem;
+}
+
+article aside {
+  margin-top: 2rem;
+  padding: 1.5rem 1.5rem 2rem 1.5rem ;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.3rem;
+}
+
+aside h2.nx-text-3xl {
+  font-size: 1rem;
+  margin: 0 0 -1rem 0;;
+  padding: 0;
+  background: none;
+}
+
+.xrpl_link {
+    margin-bottom: 4rem;
+}
+
+.xrpl_link h3 {
+  position: relative;
+  padding: 0 0 0 1.6rem;
+  margin: 2.5rem 0 -1rem 0;
+}
+
+.xrpl_link h3::before {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 0.15rem;
+  left: 0;
+  width: 1.2em;
+  height: 1.2em;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' d='M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z'/%3E%3C/svg%3E") no-repeat left center;
+  background-size: contain;
+}
+
+h2.nx-text-3xl a::before {
+  left: auto;
+  right: 1rem;
+}
+
+.xrpl_link h4 {
+  margin: 1.5rem 0 -1rem 0;
+}
+
+.xrpl_link ul {
+}
+
+.xrpl_link ul + p,
+.xrpl_link p + p{
+  margin-top: 0.5rem;
 }

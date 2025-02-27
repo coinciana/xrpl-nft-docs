@@ -72,7 +72,7 @@ aside h2.nx-text-3xl {
   font-size: 1rem;
   margin: 0 0 -1rem 0;;
   padding: 0;
-  background: none;
+  background: none !important;
 }
 
 .xrpl_link {
@@ -91,7 +91,7 @@ aside h2.nx-text-3xl {
   position: absolute;
   width: 0.5rem;
   height: 0.5rem;
-  top: 0.5rem;
+  top: 0.7rem;
   left: 0.3rem;
   border-right: 2px solid #374151;
   border-bottom: 2px solid #374151;
